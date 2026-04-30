@@ -17,7 +17,7 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v3
         with:
           # TODO: fill in your IAM role ARN!
-          role-to-assume: ${{ secret.AWS_ROLE_ARN_OIDC_OPENTOFU_APPLY }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_OIDC_OPENTOFU_APPLY }}
           role-session-name: apply-${{ github.run_number }}-${{ github.actor }}
           aws-region: us-east-2
 
