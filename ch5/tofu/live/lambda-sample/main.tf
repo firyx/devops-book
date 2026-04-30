@@ -5,7 +5,7 @@ provider "aws" {
 module "function" {
   # source  = "brikis98/devops/book//modules/lambda"
   # version = "1.0.0"
-  source = source = "github.com/firyx/terraform-book-devops/modules/lambda?ref=v1.0.1"
+  source = "github.com/firyx/terraform-book-devops/modules/lambda?ref=v1.0.1"
 
   name = var.name
 
